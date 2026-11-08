@@ -1,0 +1,1 @@
+ALTER TABLE public.payments ADD CONSTRAINT payments_amount_positive CHECK (amount > 0);

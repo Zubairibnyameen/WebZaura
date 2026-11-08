@@ -1,0 +1,14 @@
+- Site content (services, projects, blog, FAQs, testimonials, contact info) lives in typed files under src/data — keeps it ready to move to a database later.
+- Shared UI is split into src/components/layout (shell) and src/components/sections (page blocks); routes stay thin.
+- All WhatsApp links go through src/lib/whatsapp.ts so the number and message format live in one place.
+- Work link and sections render only when src/data/projects.ts has items, so real projects appear without code changes.
+
+- Shared AccessibleForm coordinates native validation and live error announcements without changing submission handlers; keeps all forms consistent.
+- Compact layout density and rem-based type scales are centralized in semantic CSS utilities; desktop overrides start at 1024px so smaller devices remain unchanged.
+- Password update failures allow session-local deferral, without clearing the persistent password-change flag or altering permissions.
+- Decorative backgrounds live in shared browser-safe layout components with theme tokens; canvas lifecycle respects visibility, touch and reduced motion to preserve scrolling performance.
+- Motion preference uses a hydration-stable shared hook and immediate CSS safeguards to keep server and browser markup identical without reduced-motion warnings.
+- Leaf routes own self-referencing canonical and structured page metadata; shared organization metadata and the preloaded local font live in the root head to avoid duplicate canonicals.
+- CRM quotation totals, numbering, accepted-lock and lead-won rules live in database triggers; the browser total in src/lib/quote-math.ts is a preview only and must mirror them.
+- CRM access is enforced by RLS helpers (is_staff, owns_lead, client_linked_to_me); server functions add role checks only for staff-only actions.
+- Public quotation links (/q/:token) resolve only through server functions with the admin client and rate limits, never through anon table policies.

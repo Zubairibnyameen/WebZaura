@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792352423259,
+      "tag": "0000_team_area_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792352462988,
+      "tag": "0001_lead_rate_limits",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792352839689,
+      "tag": "0002_profile_policy_fix",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792359033724,
+      "tag": "0003_crm_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792359076607,
+      "tag": "0004_crm_share_response",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792360610200,
+      "tag": "0005_crm_part_b",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792361763677,
+      "tag": "0006_payments_positive_amount",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1792362625426,
+      "tag": "0007_comments_delete_staff_only",
+      "breakpoints": true
+    }
+  ]
+}
